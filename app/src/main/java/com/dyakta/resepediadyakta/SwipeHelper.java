@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 public class SwipeHelper extends ItemTouchHelper.SimpleCallback{
     ProdukAdapter adapter;
 
+
     public SwipeHelper(int dragDirs, int swipeDirs) {
         super(dragDirs, swipeDirs);
     }
@@ -14,6 +15,11 @@ public class SwipeHelper extends ItemTouchHelper.SimpleCallback{
         super(ItemTouchHelper.UP | ItemTouchHelper.DOWN, ItemTouchHelper.RIGHT);
         this.adapter = adapter;
     }
+
+//    public SwipeHelper(BahanAdapter adapter) {
+//        super(ItemTouchHelper.UP | ItemTouchHelper.DOWN, ItemTouchHelper.RIGHT);
+//        this.bahanAdapter = adapter;
+//    }
 
     @Override
     public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder target) {
