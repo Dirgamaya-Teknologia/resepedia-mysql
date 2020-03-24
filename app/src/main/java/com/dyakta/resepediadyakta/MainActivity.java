@@ -20,21 +20,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        addData();
-
-        recyclerView =  findViewById(R.id.rv_produk);
-
-        adapter = new ProdukAdapter(this, produkArrayList);
-
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MainActivity.this);
-
-        recyclerView.setLayoutManager(layoutManager);
-
-        recyclerView.setAdapter(adapter);
-
-        ItemTouchHelper.Callback callback=new SwipeHelper(adapter);
-        ItemTouchHelper helper=new ItemTouchHelper(callback);
-        helper.attachToRecyclerView(recyclerView);
+//        addData();
+//
+//        recyclerView =  findViewById(R.id.rv_produk);
+//
+//        adapter = new ProdukAdapter(this, produkArrayList);
+//
+//        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MainActivity.this);
+//
+//        recyclerView.setLayoutManager(layoutManager);
+//
+//        recyclerView.setAdapter(adapter);
+//
+//        ItemTouchHelper.Callback callback=new SwipeHelper(adapter);
+//        ItemTouchHelper helper=new ItemTouchHelper(callback);
+//        helper.attachToRecyclerView(recyclerView);
     }
 
     @Override
